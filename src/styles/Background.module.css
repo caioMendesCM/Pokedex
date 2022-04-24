@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.topPanel {
+  width: 100vw;
+  height: 50vh;
+  background-color: var(--white);
+}
+.bottomPanel {
+  width: 100vw;
+  height: 50vh;
+  background-color: var(--red);
+}

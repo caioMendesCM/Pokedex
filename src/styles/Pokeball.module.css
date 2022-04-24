@@ -1,0 +1,85 @@
+.pokeball {
+  position: relative;
+}
+
+.topArch {
+  position: absolute;
+  width: 512px;
+  height: 256px;
+  background-color: var(--red);
+  border-top-left-radius: 256px;
+  border-top-right-radius: 256px;
+  border: 1px solid rgba(1,1,1, 0.3);
+}
+
+.bottomArch {
+  position: absolute;
+  top: 256px;
+  width: 512px;
+  height: 256px;
+  background-color: var(--white);
+  border-top-left-radius: 256px;
+  border-top-right-radius: 256px;
+  border: 1px solid rgba(1,1,1, 0.3);
+  transform: rotate(180deg);
+}
+
+.middle {
+  position: absolute;
+  margin: auto;
+  top: 181px;
+  display: grid;
+  grid-template-columns: 181px 148px 181px;
+  z-index: 2;
+  align-items: center;
+}
+
+.leftBar, .rightBar {
+  width: 101%;
+  height: 20px;
+  overflow: visible;
+  background-color: var(--black);
+}
+
+.buttonArea {
+  position: relative;
+  width: 151px;
+  height: 151px;
+  z-index: 3;
+}
+
+.blackRing {
+  position: absolute;
+  width: 151px;
+  height: 151px;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+
+.whiteCircle {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: var(--white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid rgba(1,1,1, 0.3);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 50%;
+  left: 50%;
+  background-color: var(--white);
+  transform: translate(-50%, -50%);
+}
+
+button:active {
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
