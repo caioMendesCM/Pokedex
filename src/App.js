@@ -1,9 +1,8 @@
 import './App.css';
-import Background from './components/Background';
-import Pokeball from './components/Pokeball';
+import Home from './pages/Home';
 
 function App() {
-  return (<Pokeball />);
+  return (<Home />);
 }
 
 export default App;
